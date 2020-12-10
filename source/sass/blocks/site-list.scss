@@ -1,0 +1,26 @@
+.site-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.site-list__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.site-list__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $basic-dark;
+  text-decoration: none;
+  padding: 40px 0;
+  display: inline-block;
+}
