@@ -1,3 +1,14 @@
 .page-header {
   background-color: $basic-light;
 }
+
+.page-header__contacts {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

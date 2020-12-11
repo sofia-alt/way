@@ -1,0 +1,24 @@
+.phone {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.phone__icon {
+  fill: transparent;
+}
+
+.phone__text {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $basic-dark;
+  padding-left: 10px;
+}
+
+.phone_header {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}

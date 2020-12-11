@@ -3,8 +3,47 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
 }
 
 .main-nav__toggle {
   display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    background-color: $basic-orange;
+    background-image: url("/img/gamburger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 72px;
+    height: 50px;
+    border: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
 }
+
+.main-nav__logo-link {
+  padding: 39px 0 38px;
+  display: block;
+
+  @media (max-width: $desktop-width) {
+    padding: 19px 0 14px;
+  }
+}
+
+.main-nav__logo-img {
+  display: block;
+
+  @media (max-width: $desktop-width) {
+    width: 44px;
+    height: 17px;
+  }
+}
+

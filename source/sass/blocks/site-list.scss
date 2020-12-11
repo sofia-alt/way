@@ -5,13 +5,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .site-list__item {
   margin-right: 40px;
+}
 
-  &:last-child {
-    margin-right: 0;
+.site-list__item_phone {
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -23,8 +30,4 @@
   text-decoration: none;
   padding: 40px 0;
   display: inline-block;
-}
-
-.site-list__link_tel {
-  text-decoration: underline;
 }
