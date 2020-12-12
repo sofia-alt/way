@@ -21,4 +21,10 @@
   @media (max-width: $desktop-width) {
     display: none;
   }
+
+  &:hover {
+    .phone__text {
+      color: $basic-orange;
+    }
+  }
 }
