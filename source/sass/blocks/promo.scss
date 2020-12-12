@@ -1,3 +1,28 @@
 .promo {
+  background-color: #3e75be;
+  background-image: url("/img/promo.jpg");
+  background-size: cover;
+  padding-top: 185px;
+  padding-bottom: 296px;
+  color: $basic-white;
+}
+
+.promo__inner {
   width: 412px;
+  margin-left: auto;
+  margin-right: 18.9%;
+}
+
+.promo__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  color: $basic-white;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.promo__text {
+  font-size: 16px;
+  line-height: 27px;
 }
