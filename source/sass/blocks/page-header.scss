@@ -1,5 +1,5 @@
 .page-header {
-  background-color: $basic-light;
+  position: relative;
 }
 
 .page-header__contacts {
@@ -11,4 +11,5 @@
 .page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }

@@ -6,6 +6,14 @@
   flex-grow: 1;
 }
 
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .main-nav__toggle {
   display: none;
 
@@ -21,12 +29,18 @@
     padding: 0;
     position: absolute;
     right: 0;
+    top: 0;
   }
 
   @media (max-width: $tablet-width) {
     width: 50px;
     height: 50px;
   }
+}
+
+.main-nav__toggle_closed {
+  background-image: url("/img/close.svg");
+  background-color: $basic-white;
 }
 
 .main-nav__logo-link {
@@ -47,3 +61,8 @@
   }
 }
 
+.main-nav__wrapper {
+  @media (max-width: $desktop-width) {
+    width: 100%;
+  }
+}
