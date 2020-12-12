@@ -1,6 +1,7 @@
 .promo {
   background-color: #3e75be;
   background-image: url("/img/promo.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 185px;
   padding-bottom: 296px;
@@ -25,4 +26,24 @@
 .promo__text {
   font-size: 16px;
   line-height: 27px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.promo__button {
+  position: relative;
+  width: 340px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 31px;
+    right: 40px;
+    width: 14px;
+    height: 14px;
+    background-image: url("/img/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
