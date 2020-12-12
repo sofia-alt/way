@@ -12,4 +12,12 @@
   &:hover {
     background-color: $bright-orange;
   }
+
+  @media (max-width: $desktop-width) {
+    padding: 19px 15px;
+    width: 250px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
