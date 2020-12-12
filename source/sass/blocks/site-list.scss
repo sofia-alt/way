@@ -2,16 +2,38 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: $basic-white;
+    padding-top: 82px;
+    padding-bottom: 284px;
+  }
+}
+
+.site-list__list_invisible {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .site-list__item {
   margin-right: 40px;
 
-  &:last-child {
+  @media (max-width: $desktop-width) {
     margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.site-list__item_phone {
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -22,5 +44,26 @@
   color: $basic-dark;
   text-decoration: none;
   padding: 40px 0;
-  display: inline-block;
+  display: block;
+
+  @media (max-width: $desktop-width) {
+    padding: 17px 35px 17px 16px;
+    background-color: $basic-light;
+    position: relative;
+    color: $basic-gray;
+    font-weight: 600;
+    font-size: 20px;
+
+    &::after {
+      content: "";
+      top: 17px;
+      right: 16px;
+      position: absolute;
+      background-image: url("/img/arrow-down.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 15px;
+    }
+  }
 }

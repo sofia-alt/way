@@ -1,0 +1,15 @@
+.page-header {
+  position: relative;
+}
+
+.page-header__contacts {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
