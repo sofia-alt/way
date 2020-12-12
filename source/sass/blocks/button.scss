@@ -1,0 +1,15 @@
+.button {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: $basic-white;
+  padding: 30px 40px;
+  background-color: $basic-orange;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $bright-orange;
+  }
+}
