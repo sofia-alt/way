@@ -1,0 +1,12 @@
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.countries__item {
+  position: relative;
+}
+
+.countries__text {
+  position: absolute;
+}
