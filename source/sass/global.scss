@@ -4,17 +4,13 @@
   box-sizing: border-box;
 }
 
-.container {
-  width: 61%;
-  margin: 0 auto;
+.container-image {
+  background-image: url("/img/world.svg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 32%;
 
   @media (max-width: $desktop-width) {
-    width: 95%;
-    max-width: 1023px;
-  }
-
-  @media (max-width: $tablet-width) {
-    width: 90%;
-    max-width: 767px;
+    background-image: none;
   }
 }

@@ -8,6 +8,7 @@
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
+  font-family: inherit;
 
   &:hover {
     background-color: $bright-orange;
