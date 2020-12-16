@@ -1,5 +1,5 @@
 .card {
-  padding: 40px 30px 30px 30px;
+  padding: 39px 30px 30px;
   border: 1px solid rgba($basic-light-dark, 0.3);
   border-radius: 6px;
   display: flex;
@@ -26,12 +26,12 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding: 30px 35px 50px;
     position: relative;
+    padding: 30px 17px 50px;
   }
 
-  @media (max-width: $desktop-width) {
-    max-width: 100%;
+  @media (max-width: $tablet-width) {
+    padding: 27px 19px 50px;
   }
 }
 
@@ -42,14 +42,23 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 28px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .card__item {
-  padding-bottom: 25px;
   padding-left: 30px;
   position: relative;
   font-size: 16px;
   line-height: 32px;
+  padding-bottom: 15px;
 
   &:last-child {
     padding-bottom: 0;
@@ -63,22 +72,43 @@
     background-image: url("/img/marker-orange.svg");
     background-position: center;
     background-repeat: no-repeat;
-    left: 0;
-    top: 0;
+    top: 6px;
+    left: -5px;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 10px;
+
+    &::before {
+      left: -3px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 9px;
   }
 }
 
 .card__title {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   display: flex;
   justify-content: space-between;
   color: rgba($basic-light-dark, 0.7);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.2px;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
-    margin-bottom: 10px;
     text-align: center;
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: $tablet-width) {
+    letter-spacing: 0;
   }
 }
 
@@ -87,7 +117,14 @@
   margin-bottom: 0;
 
   @media (max-width: $desktop-width) {
-    margin-top: 11px;
+    margin-top: 2px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 6px;
   }
 }
 
@@ -96,6 +133,8 @@
   margin: 0;
   padding-bottom: 28px;
   max-width: 290px;
+  font-size: 16px;
+  line-height: 24px;
 
   &::after {
     position: absolute;
@@ -111,6 +150,11 @@
     text-align: center;
     line-height: 24px;
     margin: 0 auto;
+    padding-bottom: 30px;
+
+    &::after {
+      top: 80px;
+    }
   }
 }
 

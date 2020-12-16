@@ -1,0 +1,31 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 53px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 38px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 21px;
+  }
+}
+
+.page-footer__container {
+  max-width: 1322px;
+  margin: 0 auto;
+  padding: 0 75px 0 97px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $desktop-width) {
+    max-width: 1023px;
+    padding: 0 21px;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 767px;
+    padding: 0 16px;
+  }
+}

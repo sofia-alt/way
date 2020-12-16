@@ -25,6 +25,10 @@
 .site-list__item {
   margin-right: 40px;
 
+  &:last-child {
+    margin-right: 57px;
+  }
+
   @media (max-width: $desktop-width) {
     margin-right: 0;
     margin-bottom: 30px;
@@ -43,7 +47,7 @@
   line-height: 17px;
   color: $basic-dark;
   text-decoration: none;
-  padding: 40px 0;
+  padding: 40px 0 36px;
   display: block;
 
   @media (max-width: $desktop-width) {

@@ -32,10 +32,10 @@
         </ul>
       </nav>
       <a class="phone phone_header" href="tel:+749978468446">
-        <svg class="phone__icon" width="18" height="19" viewBox="0 0 18 19">
+        <svg class="phone__icon" width="24" height="27" viewBox="0 0 18 19">
           <use xlink:href="/img/sprite_auto.svg#icon-phone"></use>
         </svg>
-        <span class="phone__text phone__text_header">+7 (499) - 784 - 684 - 46</span>
+        <span class="phone__text phone__text_header">+7 (499) -784-684-46</span>
       </a>
   </div>
   </header>
@@ -44,57 +44,74 @@
       <div class="promo__inner">
         <h1 class="promo__title">Путешествие по Европе</h1>
         <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-        <a class="button promo__button" href="#">Смотреть тур</a>
+        <a class="button promo__button" href="#more-info">Смотреть тур</a>
       </div>
     </section>
-    <section class="places container">
-      <h2 class="places__title">Места посещения</h2>
-      <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+    <section class="places">
+      <div class="container places__container">
+        <h2 class="places__title">Места посещения</h2>
+        <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+      </div>
       <ul class="places__list countries">
         <li class="countries__item">
-          <a class="countries__link" href="#">
+          <a class="countries__link" href="#more-info">
             <img class="countries__img" src="img/greece.jpg" width="350" height="430" alt="Греческий пейзаж">
             <span class="countries__text">
               Греция
             </span>
+            <div class="countries__hover">
+              <span class="countries__button">Смотреть подробнее</span>
+            </div>
           </a>
         </li>
         <li class="countries__item">
-          <a class="countries__link" href="#">
+          <a class="countries__link" href="#more-info">
             <img class="countries__img" src="img/albania.jpg" width="350" height="430" alt="Курорт в Албании">
             <span class="countries__text">
               Албания
             </span>
+            <div class="countries__hover">
+              <span class="countries__button">Смотреть подробнее</span>
+            </div>
           </a>
         </li>
         <li class="countries__item">
-          <a class="countries__link" href="#">
+          <a class="countries__link" href="#more-info">
             <img class="countries__img" src="img/makedonia.jpg" width="350" height="430" alt="Палаошник в Македонии">
             <span class="countries__text">
               Македония
             </span>
+            <div class="countries__hover">
+              <span class="countries__button">Смотреть подробнее</span>
+            </div>
           </a>
         </li>
         <li class="countries__item">
-          <a class="countries__link" href="#">
+          <a class="countries__link" href="#more-info">
             <img class="countries__img" src="img/montenegro.jpg" width="350" height="430" alt="Каньон в Черногории">
             <span class="countries__text">
               Черногория
             </span>
+            <div class="countries__hover">
+              <span class="countries__button">Смотреть подробнее</span>
+            </div>
           </a>
         </li>
         <li class="countries__item">
-          <a class="countries__link" href="#">
+          <a class="countries__link" href="#more-info">
             <img class="countries__img" src="img/horvatia.jpg" width="350" height="430"  alt="Пещера Бередине в Хорватии">
             <span class="countries__text">
               Хорватия
             </span>
+            <div class="countries__hover">
+              <span class="countries__button">Смотреть подробнее</span>
+            </div>
           </a>
         </li>
       </ul>
     </section>
     <div class="container-image">
-      <section class="more-info">
+      <section class="more-info" id="more-info">
         <div class="tabs container">
           <ul class="tabs__list">
             <li class="tabs__item">
@@ -223,7 +240,7 @@
           <p class="price__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
           <h4 class="price__callback">Свяжитесь с нами</h4>
           <a class="price__link phone phone_price" href="tel:+749978468446">
-            <svg class="phone__icon phone__icon_price" width="18" height="19" viewBox="0 0 18 19">
+            <svg class="phone__icon phone__icon_price" width="25" height="25" viewBox="0 0 18 19">
               <use xlink:href="/img/sprite_auto.svg#icon-phone"></use>
             </svg>
             <span class="phone__text phone__text_price">+7 (499) -784-684-46</span>
@@ -233,9 +250,9 @@
           <li class="price__item card">
             <h3 class="card__title">
               Комплексный
-              <p class="card__price">
+              <span class="card__price">
               $1999
-              </p>
+              </span>
             </h3>
             <p class="card__text">
               Ознакомьтесь с перечнем того, что входит в данный пакет
@@ -261,9 +278,9 @@
           <li class="price__item card">
             <h3 class="card__title">
               Экономный
-              <p class="card__price">
+              <span class="card__price">
                 $1399
-              </p>
+              </span>
             </h3>
             <p class="card__text">
               Ознакомьтесь с перечнем того, что входит в данный пакет
@@ -293,97 +310,79 @@
       </section>
     </div>
     <section class="ask-quest">
-      <h2 class="ask-quest__title">
-        У Вас остались вопросы?
-      </h2>
-      <p class="ask-quest__text">
-        Оставьте свой номер или e-mail и мы свяжемся с Вами
-      </p>
-      <form class="ask-quest__form">
-        <input class="ask-quest__input" type="tel" name="your-phone" placeholder="+7 Введите 10 цифр номера" required maxlength="16">
-        <input class="ask-quest__input" type="text" name="your-email" placeholder="E-mail" required>
-        <button class="ask-quest__button" type="submit" name="quest-send">Отправить</button>
-      </form>
+      <div class="ask-quest__container">
+        <h2 class="visually-hidden">Форма запроса обратного звонка</h2>
+        <div class="ask-quest__wrapper">
+          <form class="ask-quest__form">
+            <h3 class="ask-quest__title">
+              У Вас остались вопросы?
+            </h3>
+            <p class="ask-quest__text">
+              Оставьте свой номер или e-mail и мы свяжемся с Вами
+            </p>
+            <input class="ask-quest__input" type="tel" name="your-phone" placeholder="+7 Введите 10 цифр номера" required maxlength="16">
+            <input class="ask-quest__input" type="text" name="your-email" placeholder="E-mail" required>
+            <button class="button ask-quest__button" type="submit" name="quest-send">Отправить</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <section class="travel">
-      <h2 class="travel__title">
-        Следующие путешествия
-      </h2>
-      <ul class="travel__list">
-        <li class="travel__item">
-          Марсель
-        </li>
-        <li class="travel__item">
-          Сардиния
-        </li>
-        <li class="travel__item">
-          Корс
-        </li>
-        <li class="travel__item">
-          Ним
-        </li>
-        <li class="travel__item">
-          Палермо
-        </li>
-        <li class="travel__item">
-          Ницца
-        </li>
-        <li class="travel__item">
-          Монпелье
-        </li>
-        <li class="travel__item">
-          Катания
-        </li>
-        <li class="travel__item">
-          Монако
-        </li>
-        <li class="travel__item">
-          Барселона
-        </li>
-        <li class="travel__item">
-          Неаполь
-        </li>
-        <li class="travel__item">
-          Динь-ле-Бен
-        </li>
-        <li class="travel__item">
-          Пальма
-        </li>
-        <li class="travel__item">
-          Рим
-        </li>
-        <li class="travel__item">
-          Гренобль
-        </li>
-      </ul>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts__title">
-        Наши контакты
-      </h2>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <a class="contacts__link contacts__link_phone" href="mailto:puteshestviemechta@gmail.ru">
-            puteshestviemechta@gmail.ru
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a class="contacts__link contacts__link_email"  href="tel:+749978468446">
-             +7 (499) -784-684-46
+    <div class="page-footer__container">
+      <section class="travel">
+        <h2 class="travel__title">
+          Следующие путешествия
+        </h2>
+        <ul class="travel__list">
+          <li class="travel__item">Марсель</li>
+          <li class="travel__item">Ним</li>
+          <li class="travel__item">Монпелье</li>
+          <li class="travel__item">Барселона</li>
+          <li class="travel__item">Пальма</li>
+        </ul>
+        <ul class="travel__list">
+          <li class="travel__item">Сардиния</li>
+          <li class="travel__item">Палермо</li>
+          <li class="travel__item">Катания</li>
+          <li class="travel__item">Неаполь</li>
+          <li class="travel__item">Рим</li>
+        </ul>
+        <ul class="travel__list">
+          <li class="travel__item">Корс</li>
+          <li class="travel__item">Ницца</li>
+          <li class="travel__item">Монако</li>
+          <li class="travel__item">Динь-ле-Бен</li>
+          <li class="travel__item">Гренобль</li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">
+          Наши контакты
+        </h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link_email" href="mailto:puteshestviemechta@gmail.ru">
+              <span class="contacts__text">Почта</span>
+              <span class="contacts__email">puteshestviemechta@gmail.ru</span>
             </a>
           </li>
-      </ul>
-    </section>
-    <section class="corporate-travel">
-      <h2 class="corporate-travel__title">
-        Корпоративные путешествия
-      </h2>
-      <p class="corporate-travel__text">
-        Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением
-      </p>
-    </section>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link_phone"  href="tel:+749978468446">
+               +7 (499) -784-684-46
+              </a>
+            </li>
+        </ul>
+      </section>
+      <section class="corporate-travel">
+        <h2 class="corporate-travel__title">
+          Корпоративные путешествия
+        </h2>
+        <p class="corporate-travel__text">
+          Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением
+        </p>
+      </section>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>

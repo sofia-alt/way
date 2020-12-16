@@ -1,10 +1,18 @@
 .countries {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 1332px;
+  margin: 0 auto;
+  padding: 0 74px 0 90px;
 
   @media (max-width: $desktop-width) {
     justify-content: space-between;
+    padding: 0 80px 0 82px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 15px;
   }
 }
 
@@ -20,13 +28,13 @@
   }
 
   &:nth-child(3n+1):not(:first-child) {
-    margin-left: 0;
+    margin: 0 0 0 15%;
     margin-bottom: 0;
   }
 
   &:last-child {
-    margin-bottom: 0;
-    margin-left: 10%;
+    margin: 0;
+    margin-right: 15%;
   }
 
   @media (max-width: $desktop-width) {
@@ -35,10 +43,11 @@
     margin-bottom: 18px;
 
     &:last-child {
-      margin: 0 auto;
+      margin: 14px auto 0;
     }
 
     &:nth-child(3n+1):not(:first-child) {
+      margin: 0;
       margin-bottom: 18px;
     }
   }
@@ -54,23 +63,40 @@
     &:first-child {
       margin: 0 auto 35px;
     }
+
+    &:last-child {
+      margin-top: 0;
+    }
   }
 }
 
 .countries__link {
   display: block;
+  position: relative;
+
+  &:hover {
+    .countries__hover {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .countries__img {
   display: block;
   width: 100%;
   height: auto;
+
+  @media (max-width: $desktop-width) {
+    width: 288px;
+    height: 425px;
+  }
 }
 
 .countries__text {
   position: absolute;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.25vw;
   line-height: 29px;
   color: $basic-light-dark;
   background-color: $basic-white;
@@ -80,4 +106,38 @@
   bottom: 0;
   left: 50%;
   margin-left: -31%;
+
+  @media (max-width: $desktop-width) {
+    font-size: 24px;
+    width: 74.4%;
+    margin-left: -38%;
+  }
+}
+
+.countries__hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  background-color: rgba($basic-dark, 0.6);
+  display: flex;
+  align-items: center;
+}
+
+.countries__button {
+  justify-content: center;
+  margin: 0 auto 37px;
+  width: 87.7887%;
+  min-height: 77px;
+  border: 1px solid rgba($basic-white, 0.7);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  background: 0 0;
+  text-transform: uppercase;
+  color: $basic-white;
+  display: flex;
+  align-items: center;
 }

@@ -17,6 +17,12 @@
     display: inline-block;
     text-align: center;
   }
+
+  &:hover {
+    .phone__text_price {
+      color: $basic-orange;
+    }
+  }
 }
 
 .phone__icon {
@@ -24,6 +30,9 @@
 }
 
 .phone__icon_price {
+  margin-top: -2px;
+  margin-left: -2px;
+
   @media (max-width: $desktop-width) {
     display: none;
   }
@@ -31,8 +40,8 @@
 
 .phone__text {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 32px;
   padding-left: 10px;
   text-decoration: underline;
 }
@@ -55,6 +64,8 @@
 }
 
 .phone_header {
+  padding: 36px 0 30px;
+
   @media (max-width: $desktop-width) {
     display: none;
   }

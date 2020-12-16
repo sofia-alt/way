@@ -9,7 +9,7 @@
   color: $basic-light-dark;
   position: relative;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
 
   &::after {
     position: absolute;
@@ -38,6 +38,13 @@
   font-size: 14px;
   line-height: 28px;
   color: rgba($basic-light-dark, 0.7);
+  margin-top: 21px;
+  margin-bottom: 30px;
+  letter-spacing: -0.4px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .review__wrapper {
@@ -61,6 +68,8 @@
     top: 50px;
     left: 50%;
     margin-left: -134px;
+    padding: 30px 22px;
+    text-align: center;
   }
 }
 
@@ -78,7 +87,7 @@
   display: block;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 }
 
@@ -88,6 +97,13 @@
   line-height: 20px;
   color: $basic-light-dark;
   padding-left: 16px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    letter-spacing: -0.466667px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .review__country-photo {

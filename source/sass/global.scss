@@ -7,8 +7,9 @@
 .container-image {
   background-image: url("/img/world.svg");
   background-repeat: no-repeat;
-  background-position-x: 50%;
-  background-position-y: 32%;
+  background-position-x: 52%;
+  background-position-y: 20%;
+
 
   @media (max-width: $desktop-width) {
     background-image: none;

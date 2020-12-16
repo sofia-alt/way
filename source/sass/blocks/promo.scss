@@ -4,12 +4,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 185px;
-  padding-bottom: 296px;
+  padding-bottom: 297px;
   color: $basic-white;
 
   @media (max-width: $desktop-width) {
-    padding-top: 60px;
     padding-bottom: 83px;
+    padding-top: 43px;
     text-align: center;
   }
 
@@ -23,10 +23,10 @@
 .promo__inner {
   width: 412px;
   margin-left: auto;
-  margin-right: 18.9%;
+  margin-right: 21.85%;
 
   @media (max-width: $desktop-width) {
-    width: 398px;
+    width: 420px;
     margin: 0 auto;
   }
 
@@ -42,10 +42,12 @@
   color: $basic-white;
   margin-top: 0;
   margin-bottom: 30px;
+  letter-spacing: -1px;
 
   @media (max-width: $desktop-width) {
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: -3px;
+    letter-spacing: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -53,7 +55,9 @@
     background-image: url("/img/promo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 82px 15px;
+    padding: 82px 14px;
+    font-size: 24px;
+    line-height: 150%;
   }
 }
 
@@ -61,16 +65,22 @@
   font-size: 16px;
   line-height: 27px;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
+  letter-spacing: -0.4px;
+  width: 355px;
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 0;
+    width: auto;
   }
 
   @media (max-width: $tablet-width) {
     color: $basic-dark;
-    width: 87%;
-    margin: 0 auto 20px;
+    margin: 23px auto 20px;
+    padding: 0 17px;
+    font-size: 16px;
+    line-height: 170%;
   }
 }
 
@@ -78,6 +88,8 @@
   position: relative;
   width: 340px;
   text-align: left;
+  font-size: 15px;
+  letter-spacing: 0;
 
   &::before {
     content: "";
@@ -95,9 +107,17 @@
   @media (max-width: $desktop-width) {
     padding-left: 40px;
     width: 250px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
 
     &::before {
       top: 18px;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 287px;
   }
 }

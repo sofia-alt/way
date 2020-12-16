@@ -1,0 +1,126 @@
+.ask-quest {
+  padding-bottom: 170px;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 54px;
+  }
+}
+
+.ask-quest__wrapper {
+  background-image: url("/img/back-form.jpg");
+  background-repeat: no-repeat;
+  max-width: 844px;
+  min-height: 455px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #d86a6a;
+
+  @media (max-width: $desktop-width) {
+    max-width: 100%;
+    height: 456px;
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: $basic-light;
+  }
+}
+
+.ask-quest__title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  color: $basic-dark;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ask-quest__form {
+  padding: 49px 44px 45px 42px;
+  margin-left: auto;
+  box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+  max-width: 656px;
+  background-color: $basic-white;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  color: $basic-dark;
+  border-radius: 5px;
+
+  @media (max-width: $desktop-width) {
+    position: static;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: $basic-light;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 50px 16px;
+  }
+}
+
+.ask-quest__text {
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 24px;
+  margin-top: 9px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 26px;
+    margin-top: 13px;
+  }
+}
+
+.ask-quest__input {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 15px;
+  border: 1px solid rgba($basic-light-dark, 0.3);
+  width: 269px;
+  margin-bottom: 22px;
+  margin-top: 0;
+
+  &:last-of-type {
+    margin-left: 19px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 24px;
+
+
+    &:last-of-type {
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.ask-quest__button {
+  padding: 18px 40px;
+  font-size: 12px;
+  line-height: 15px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.ask-quest__container {
+  max-width: 1213px;
+  margin: 0 auto;
+  padding: 0 15px 0 42px;
+  position: relative;
+
+  @media (max-width: $desktop-width) {
+    max-width: 100%;
+    padding: 0;
+  }
+}
