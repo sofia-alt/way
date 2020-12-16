@@ -1,0 +1,127 @@
+.card {
+  padding: 40px 30px 30px 30px;
+  border: 1px solid rgba($basic-light-dark, 0.3);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  background-color: $basic-white;
+  max-width: 370px;
+
+  &:hover {
+    border: 3px solid $basic-orange;
+
+    .card__item {
+      &::before {
+        background-image: url("/img/marker.svg");
+      }
+    }
+
+    .card__title {
+      color: $basic-orange;
+    }
+
+    .card__text::after {
+      background-color: $basic-orange;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 30px 35px 50px;
+    position: relative;
+  }
+
+  @media (max-width: $desktop-width) {
+    max-width: 100%;
+  }
+}
+
+.card__list {
+  margin: 0;
+  padding: 30px 0;
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.card__item {
+  padding-bottom: 25px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 16px;
+  line-height: 32px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-image: url("/img/marker-orange.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba($basic-light-dark, 0.7);
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.card__price {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 11px;
+  }
+}
+
+.card__text {
+  position: relative;
+  margin: 0;
+  padding-bottom: 28px;
+  max-width: 290px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba($basic-light-dark, 0.3);
+    margin: 0 auto;
+  }
+
+  @media (max-width: $desktop-width) {
+    text-align: center;
+    line-height: 24px;
+  }
+}
+
+.card__button {
+  width: 100%;
+
+  @media (max-width: $desktop-width) {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    width: calc(100% + 2px);
+  }
+}

@@ -2,29 +2,60 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  color: $basic-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $basic-orange;
+  }
+}
+
+.phone_price {
+  color: $basic-orange;
+
+  @media (max-width: $desktop-width) {
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 .phone__icon {
   fill: transparent;
 }
 
+.phone__icon_price {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .phone__text {
-  text-decoration: underline;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: $basic-dark;
   padding-left: 10px;
+  text-decoration: underline;
+}
+
+.phone__text_price {
+  font-size: 20px;
+  line-height: 32px;
+  text-decoration: none;
+  padding-left: 20px;
+  color: $basic-dark;
+
+  @media (max-width: $desktop-width) {
+    padding: 0;
+    font-size: 18px;
+    line-height: 32px;
+    text-decoration: underline;
+    color: $basic-orange;
+    font-weight: normal;
+  }
 }
 
 .phone_header {
   @media (max-width: $desktop-width) {
     display: none;
-  }
-
-  &:hover {
-    .phone__text {
-      color: $basic-orange;
-    }
   }
 }

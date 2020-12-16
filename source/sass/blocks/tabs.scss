@@ -1,6 +1,5 @@
 .tabs {
   margin-bottom: 80px;
-  max-width: 900px;
 }
 
 .tabs__list {
@@ -11,6 +10,7 @@
   flex-wrap: wrap;
   display: flex;
   border-bottom: 1px solid rgba($basic-light-dark, 0.3);
+  max-width: 900px;
 
   @media (max-width: $desktop-width) {
     flex-wrap: nowrap;
@@ -21,13 +21,14 @@
 
 .tabs__item {
   padding-bottom: 15px;
+  padding-left: 40px;
 
-  @media (max-width: $tablet-width) {
+  &:first-child {
+    padding-left: 0;
+  }
+
+  @media (max-width: $desktop-width) {
     padding-left: 99px;
-
-    &:first-child {
-      padding-left: 0;
-    }
   }
 }
 
