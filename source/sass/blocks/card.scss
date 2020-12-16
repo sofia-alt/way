@@ -105,12 +105,12 @@
     left: 0;
     bottom: 0;
     background-color: rgba($basic-light-dark, 0.3);
-    margin: 0 auto;
   }
 
   @media (max-width: $desktop-width) {
     text-align: center;
     line-height: 24px;
+    margin: 0 auto;
   }
 }
 
