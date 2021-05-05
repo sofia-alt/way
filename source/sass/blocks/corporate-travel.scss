@@ -26,9 +26,10 @@
     text-align: center;
 
     &::before {
-      left: 12px;
       width: 286px;
       top: -30px;
+      left: 50%;
+      margin-left: -143px;
     }
   }
 }
